@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Search Results</title>
+</head>
+<body>
+    <h1>Employee Search Results</h1>
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee.fname }} {{ employee.lname }} - Age: {{ employee.age }} - Address: {{ employee.address }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
